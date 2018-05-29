@@ -1,0 +1,19 @@
+#cloud-config
+disable_root: true
+package_upgrade: true
+hostname: SOLELY_VOLUME
+users:
+  - name: admin
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    ssh-authorized-keys:
+      - ssh-rsa ADD PUBLIC KEY
+  - name: user
+    shell: /bin/bash
+    lock-passwd: false
+    passwd: yourHashedPassword
+    ssh-authorized-keys:
+      - ssh-rsa ADD PUBLIC KEY
+runcmd:
+  - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/' /etc/ssh/sshd_config

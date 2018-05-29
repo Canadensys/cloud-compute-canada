@@ -1,0 +1,41 @@
+ip-local:       IP
+image:          IMAGE
+network:        NETWORK
+network-id:     NETWORK-ID
+subnet-id:      SUBNET-ID
+
+auth_url:       'AUTH_URL'
+project_name:   'PROJECT_NAME'
+tenant_name:    'TENANT_NAME'
+tenant_id:      'TENANT_ID'
+region_name:    'REGION_NAME'
+
+vms:
+    vm-0:
+        ip: END_OF_IP
+        desc: VM_WITH_FLOATING_IP
+        size: VM_SIZE
+        flavor:  VM_FLAVOR
+        security-group: SECURITY_GROUP
+        floating-ip: FLOATING_IP_ASSOCIATE
+    vm-1:
+        ip: 1
+        desc: VM_WITH_VOLUME
+        size: 25
+        flavor:  VM_FLAVOR
+        security-group: SECURITY_GROUP
+        mounted-volume: SOLELY_VOLUME
+        mounted-volume-name: /dev/sdc
+    vm-002:
+        ip: 2
+        desc: SIMPLE_VM
+        size: 25
+        flavor:  VM_FLAVOR
+        security-group: SECURITY_GROUP
+    SOLELY_VOLUME:
+        ip: 
+        desc: FILES
+        size : 15000
+        flavor: 
+        security-group:
+    etc.

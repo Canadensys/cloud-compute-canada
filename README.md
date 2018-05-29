@@ -13,9 +13,9 @@ $ source /path/to/project/name/openrc/<project name>-openrc.sh \
 `$ openstack security group list`
 
 ### Few command lines
-// create ssh keys for connection
-`$ ssh-keygen -t rsa`
-// create an hashed password
+// create ssh keys for connection \
+`$ ssh-keygen -t rsa` \
+// create an hashed password \
 `$ mkpasswd -m SHA-512 --rounds=4096`
 
 ### ip-local

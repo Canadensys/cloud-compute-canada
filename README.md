@@ -12,12 +12,6 @@ Test the connexion: \
 
 **Use information in `<project name>-openrc.sh` to set variables in `vms_info.yml`**
 
-### Few command lines
-create ssh keys for connection \
-`$ ssh-keygen -t rsa` \
-create an hashed password \
-`$ mkpasswd -m SHA-512 --rounds=4096`
-
 ### ip-local
 ip-local is the the subdomain with from /0 to /31, the end of the ip address could be set per vm in 'ip'. \
 See vms_info.yml template
@@ -27,7 +21,7 @@ install packages \
 `$ sudo apt-get update` \
 `$ sudo apt-get install python-dev python-pip` \
 `$ sudo apt-get install python-openstackclient` \
-`$ sudo apt-get install python-shade` \
+`$ sudo apt-get install python-shade`
 
 ### STEPS:
 0- Prepare access information in vms_info.yml \
@@ -36,3 +30,10 @@ install packages \
 3- `$ python create_user_configs.py` \
 4- `$ python deploy_volumes.py` \
 5- `$ python deploy_instances.py`
+
+### Few command lines
+create ssh keys for connection \
+`$ ssh-keygen -t rsa`
+
+create an hashed password \
+`$ mkpasswd -m SHA-512 --rounds=4096`

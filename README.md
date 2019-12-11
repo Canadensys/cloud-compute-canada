@@ -21,6 +21,7 @@ install packages \
 `$ sudo apt-get update` \
 `$ sudo apt-get install python-dev python-pip` \
 `$ sudo apt-get install python-openstackclient` \
+`$ sudo apt-get install python-yaml` \
 `$ sudo apt-get install python-shade`
 
 ### STEPS:

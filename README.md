@@ -5,17 +5,17 @@ All informations related to deployement on the Compute Canada Cloud
 Scripts to launch VMs on Openstack ComputeCanada
 
 ### Connexion to CC Openstack
-// [Get and set openstack access](https://docs.computecanada.ca/wiki/OpenStack_Command_Line_Clients#Connecting_CLI_to_OpenStack) \
-// Test the connexion:
+[Get and set openstack access](https://docs.computecanada.ca/wiki/OpenStack_Command_Line_Clients#Connecting_CLI_to_OpenStack) \
+Test the connexion:
 $ source /path/to/project/name/openrc/<project name>-openrc.sh \
-// Use information from <project name>-openrc.sh in vms_info.yml
-// test the connection:
+Use information from <project name>-openrc.sh in vms_info.yml \
+test the connection:
 `$ openstack security group list`
 
 ### Few command lines
-// create ssh keys for connection \
+create ssh keys for connection \
 `$ ssh-keygen -t rsa` \
-// create an hashed password \
+create an hashed password \
 `$ mkpasswd -m SHA-512 --rounds=4096`
 
 ### ip-local
@@ -23,7 +23,7 @@ ip-local is the the subdomain with from /0 to /31, the end of the ip address cou
 See vms_info.yml template
 
 ### Packages on Ubuntu 16.04, local machine
-// install packages \
+install packages \
 `$ sudo apt-get update` \
 `$ sudo apt-get install python-dev python-pip` \
 `$ sudo apt-get install python-openstackclient` \

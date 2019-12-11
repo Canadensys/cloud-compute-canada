@@ -24,7 +24,7 @@ See vms_info.yml template
 
 ### Packages on Ubuntu 16.04, local machine
 // install packages \
-`$ sudo apt-get update`
+`$ sudo apt-get update` \
 `$ sudo apt-get install python-dev python-pip` \
 `$ sudo apt-get install python-openstackclient` \
 `$ sudo apt-get install python-shade` \

@@ -6,11 +6,11 @@ Scripts to launch VMs on Openstack ComputeCanada
 
 ### Connexion to CC Openstack
 [Get and set openstack access](https://docs.computecanada.ca/wiki/OpenStack_Command_Line_Clients#Connecting_CLI_to_OpenStack) \
-Test the connexion:
+Test the connexion: \
 `$ source /path/to/project/name/openrc/<project name>-openrc.sh` \
 `$ openstack security group list`
 
-Use information from <project name>-openrc.sh in vms_info.yml \
+**Use information in <project name>-openrc.sh to set variables in vms_info.yml**
 
 ### Few command lines
 create ssh keys for connection \

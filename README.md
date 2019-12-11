@@ -10,7 +10,7 @@ Test the connexion: \
 `$ source /path/to/project/name/openrc/<project name>-openrc.sh` \
 `$ openstack security group list`
 
-**Use information in <project name>-openrc.sh to set variables in vms_info.yml**
+**Use information in `<project name>-openrc.sh` to set variables in `vms_info.yml`**
 
 ### Few command lines
 create ssh keys for connection \

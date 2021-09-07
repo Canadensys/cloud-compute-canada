@@ -28,9 +28,9 @@ install packages \
 0- Prepare access information in vms_info.yml \
 1- Prepare VMs information with vms_info.yml \
 2- Create user default with user_vm-default.txt \
-3- `$ python create_user_configs.py` \
-4- `$ python deploy_volumes.py` \
-5- `$ python deploy_instances.py`
+3- `$ python create_user_config.py` \
+4- `$ python deploy_volume.py` \
+5- `$ python deploy_instance.py`
 
 ### Few command lines
 create ssh keys for connection \
